@@ -1,6 +1,6 @@
-🔗 DevMate – Connect. Collaborate. Code.
+🔗 GitMatched – Connect. Collaborate. Code.
 
-DevMate is a web app built for developers to connect, collaborate, and build together — like "Tinder for devs." Whether you're looking for a hackathon buddy, an open-source partner, or someone who vibes with your stack, DevMate helps you match based on skills, interests, and goals.
+GitMatched is a web app built for developers to connect, collaborate, and build together — like "Tinder for devs." Whether you're looking for a hackathon buddy, an open-source partner, or someone who vibes with your stack, DevMate helps you match based on skills, interests, and goals.
 
 🚀 Tech Stack
 Frontend: React.js
