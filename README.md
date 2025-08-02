@@ -44,9 +44,13 @@ GitMatched is a full-stack web application built for developers to connect, coll
 
 src/
 ├── config/ # Database connection logic
+
 ├── middleware/ # Auth middleware, validation handlers
+
 ├── models/ # Mongoose models (User, ConnectionRequest, etc.)
+
 ├── routes/ # Express route handlers
+
 │ ├── auth.js
 │ ├── profile.js
 │ ├── request.js
@@ -65,6 +69,7 @@ src/
 - 💬 Real-time chat (WebSocket-based)
 - 🔄 CI/CD pipeline
 - ☁️ Backend containerization and deployment on **AWS**
+- Frontend
 
 ---
 
