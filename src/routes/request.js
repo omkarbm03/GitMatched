@@ -3,7 +3,6 @@ const { userAuth } = require("../middleware/auth");
 const requestRouter = express.Router();
 const ConnectionRequest = require("../models/connectionRequest");
 const { userModel } = require("../models/user");
-const { SnowDeviceManagement } = require("aws-sdk");
 
 requestRouter.post(
   "/request/send/:status/:toUserId",
