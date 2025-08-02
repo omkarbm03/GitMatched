@@ -55,24 +55,26 @@ src/
 ├── app.js # Express app setup
 
 
----
-- Ready for horizontal scaling and microservice expansion
+
+> ✅ Ready for horizontal scaling and microservice expansion.
 
 ---
 
-## 📌 coming soon
+## 📌 Coming Soon
 
-
-Real-time chat (WebSocket-based) in development  
-CI/CD pipeline 
-Backend containerized and deployment on **AWS** 
+- 💬 Real-time chat (WebSocket-based)
+- 🔄 CI/CD pipeline
+- ☁️ Backend containerization and deployment on **AWS**
 
 ---
 
 ## 💡 Inspiration
 
-Built as a developer-first platform to solve the problem of finding project collaborators, especially during hackathons and open-source events.
+GitMatched was built as a developer-first platform to solve a common problem:  
+**Finding the right collaborators for projects, hackathons, and open-source work.**  
+It’s designed to help developers discover like-minded builders based on skills, goals, and interests.
 
 ---
 
-Feel free to clone, explore, and contribute!
+Feel free to clone, explore, and contribute! 🚀
+
