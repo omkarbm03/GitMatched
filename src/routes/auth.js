@@ -4,12 +4,11 @@ const { userModel } = require("../models/user");
 const authRouter = express.Router();
 const { userAuth } = require("../middleware/auth");
 
-
 const bcrypt = require("bcrypt");
 
 authRouter.post("/signup", async (req, res) => {
   try {
-    const { firstName, lastName, emailId, password } = req.body;
+    const { firstName, lastName, emailId, password, skills, about } = req.body;
     validateSignUpData(req);
 
     const passwordHash = await bcrypt.hash(password, 10);
@@ -19,6 +18,8 @@ authRouter.post("/signup", async (req, res) => {
       lastName,
       emailId,
       password: passwordHash,
+      skills,
+      about,
     });
 
     await user.save();
@@ -46,9 +47,9 @@ authRouter.post("/login", async (req, res) => {
         expires: new Date(Date.now() + 8 * 3600000),
       });
 
-      res.send("Login successful");
+      res.send(user);
     } else {
-      throw new Error("Incorrect Password");
+      throw new Error("Incorrect Credentials");
     }
   } catch (err) {
     res.status(400).send("Error : " + err.message);

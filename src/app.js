@@ -5,7 +5,20 @@ const cookieParser = require("cookie-parser");
 const authRouter = require("./routes/auth");
 const profileRouter = require("./routes/profile");
 const requestRouter = require("./routes/request");
-const userRouter = require("./routes/user")
+const userRouter = require("./routes/user");
+const cors = require("cors");
+
+const options = {
+  origin: "http://localhost:5173",
+  methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(options));
+app.options(/.*/, cors(options));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -26,4 +39,3 @@ connectDB()
   .catch(() => {
     console.log("error");
   });
-
