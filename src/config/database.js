@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   await mongoose.connect(
-    "DB URL"
+    "mongodb+srv://omkarbm03:Deadpool3@cluster0.fghthxu.mongodb.net/GitMatched"
   );
 };
 
