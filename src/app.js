@@ -7,6 +7,7 @@ const profileRouter = require("./routes/profile");
 const requestRouter = require("./routes/request");
 const userRouter = require("./routes/user");
 const cors = require("cors");
+require("dotenv").config();
 
 const options = {
   origin: ["http://localhost:5173",
@@ -34,7 +35,7 @@ app.use("/", userRouter);
 connectDB()
   .then(() => {
     console.log("Connected");
-    app.listen(3000, () => {
+    app.listen(process.env.PORT, () => {
       console.log("Server is running");
     });
   })
